@@ -1,0 +1,2 @@
+[0404/153359.676:ERROR:registration_protocol_win.cc(108)] CreateFile: The system cannot find the file specified. (0x2)
+[0404/153400.351:ERROR:crashpad_client_win.cc(868)] not connected
