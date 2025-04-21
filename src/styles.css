@@ -1,0 +1,38 @@
+/* You can add global styles to this file, and also import other style files */
+html,body {
+  font-family: 'KrutiDev', "Poppins", sans-serif;
+  height: 100%;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.ms-5-0 {
+margin-left: 5rem;
+}
+
+.ms-6-0 {
+margin-left: 6rem;
+}
+
+.btn-primary {
+  background-color: #2957A3 !important;
+  border-color: #2957A3 !important;
+}
+
+.btn-primary:hover {
+  background-color: #3c77d6 !important;
+  border-color: #3c77d6 !important;
+}
+
+.btn-outline-primary {
+  border-color: #2957A3 !important;
+  color: #2957A3 !important;
+}
+
+.btn-outline-primary:hover {
+  background-color: #2957A3 !important;
+  color: #fff !important;
+}
+

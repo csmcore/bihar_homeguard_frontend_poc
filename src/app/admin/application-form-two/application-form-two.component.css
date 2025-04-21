@@ -1,0 +1,101 @@
+
+/* Custom styles that extend Bootstrap */
+/* .header-title-en {
+  font-size: 19px;
+  font-weight: 700;
+  color: #292929;
+  line-height: 120%;
+  letter-spacing: 0.19px;
+}
+
+.header-title-hi {
+  font-size: 20px;
+  font-weight: 600;
+  color: #292929;
+  line-height: 120%;
+  letter-spacing: 0.2px;
+} */
+
+/* Media queries for responsive design */
+/* @media (max-width: 767.98px) {
+  .footer-buttons {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .btn {
+    width: 100%;
+    margin-bottom: 0.5rem;
+  }
+} */
+
+/* by reshma */
+.card--border{
+  border-radius: .5rem .5rem 0 0;
+    border: 0;
+    border-bottom: 1px solid #CCC!important;
+}
+.card--radius{
+  border-radius: 0 0 .5rem .5rem;
+}
+.text-blue{
+  color: rgba(41, 87, 163, 1);
+}
+.border-blue{
+  border: 1px solid rgba(41, 87, 163, 1);
+}
+.note{
+  color: rgba(255, 126, 33, 1);
+  font-style: italic;
+}
+legend {
+  font-size: 1rem;
+}
+.cardfoot-buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.flex-check{
+  display: flex;
+  gap: 1.5rem;
+
+}
+.card-head{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.heading-sec{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.bg-warning-subtle {
+  background: rgba(255, 126, 33, 0.06)!important;
+}
+/* .mandatory{
+
+} */
+/* by reshma */
+
+@media (max-width: 576px) {
+ 
+  .cardfoot-buttons {
+    flex-direction: column;
+  }
+  .flex-check{
+    flex-direction: column;
+  }
+  .card-head{
+    flex-direction: column;
+        justify-content: start;
+        align-items: start;
+        gap: 0.5rem;
+  }
+  .heading-sec{
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: start;
+  }
+}

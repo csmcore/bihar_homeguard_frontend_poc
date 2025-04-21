@@ -1,0 +1,531 @@
+
+
+<div class="application-container">
+    <header class="header container">
+      <div class="header-content">
+        <div class="logo-container">
+          <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/353a135f42068e9be14d3b789540947c6add264a" alt="Bihar Homeguard Logo" class="logo-img" />
+          <div class="title-container">
+            <h1 class="main-title">BIHAR HOMEGUARD</h1>
+            <h2 class="subtitle">बिहार गृहरक्षक</h2>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="main-content">
+      <div class="content-wrapper container">
+        <div class="page-header">
+          <div class="back-title">
+            <button class="back-button" aria-label="Go back">
+              <i class="ti ti-arrow-left" aria-hidden="true"></i>
+            </button>
+            <h2 class="page-title">Home Guard Application 2025</h2>
+          </div>
+        </div>
+
+        <div class="card  px-lg-5 px-sm-0 card--border shadow ">
+          <div class="card-body py-3">
+            <div
+              class="card-head "
+            >
+              <div class="d-flex align-items-center">
+                <svg
+                width="145"
+                height="44"
+                viewBox="0 0 145 44"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                aria-hidden="true"
+              >
+                <circle cx="17" cy="22" r="10" fill="white"></circle>
+                <path
+                  d="M17 12C11.49 12 7 16.49 7 22C7 27.51 11.49 32 17 32C22.51 32 27 27.51 27 22C27 16.49 22.51 12 17 12ZM21.78 19.7L16.11 25.37C15.97 25.51 15.78 25.59 15.58 25.59C15.38 25.59 15.19 25.51 15.05 25.37L12.22 22.54C11.93 22.25 11.93 21.77 12.22 21.48C12.51 21.19 12.99 21.19 13.28 21.48L15.58 23.78L20.72 18.64C21.01 18.35 21.49 18.35 21.78 18.64C22.07 18.93 22.07 19.4 21.78 19.7Z"
+                  fill="#2957A3"
+                ></path>
+                <text
+                  fill="#2957A3"
+                  xml:space="preserve"
+                  style="white-space: pre"
+                  font-family="Poppins"
+                  font-size="16"
+                  font-weight="500"
+                  letter-spacing="0.01em"
+                >
+                  <tspan x="35" y="27.6">Basic Details</tspan>
+                </text>
+              </svg>
+
+              </div>
+              <div class="progress flex-grow-1 " style="height: 4px;">
+                <div
+                  class="progress-bar "
+                  role="progressbar"
+                  style="width: 100%"
+                  aria-valuenow="100"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                ></div>
+              </div>
+              <div class="d-flex align-items-center">
+                <svg
+                width="200"
+                height="44"
+                viewBox="0 0 200 44"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                aria-hidden="true"
+              >
+                <circle cx="17" cy="22" r="10" fill="white"></circle>
+                <path
+                  d="M17 12C11.49 12 7 16.49 7 22C7 27.51 11.49 32 17 32C22.51 32 27 27.51 27 22C27 16.49 22.51 12 17 12ZM21.78 19.7L16.11 25.37C15.97 25.51 15.78 25.59 15.58 25.59C15.38 25.59 15.19 25.51 15.05 25.37L12.22 22.54C11.93 22.25 11.93 21.77 12.22 21.48C12.51 21.19 12.99 21.19 13.28 21.48L15.58 23.78L20.72 18.64C21.01 18.35 21.49 18.35 21.78 18.64C22.07 18.93 22.07 19.4 21.78 19.7Z"
+                  fill="#2957A3"
+                ></path>
+                <text
+                  fill="#2957A3"
+                  xml:space="preserve"
+                  style="white-space: pre"
+                  font-family="Poppins"
+                  font-size="16"
+                  font-weight="500"
+                  letter-spacing="0.01em"
+                >
+                  <tspan x="35" y="27.6">Upload Documents</tspan>
+                </text>
+              </svg>
+
+              </div>
+              <div _ngcontent-ng-c303433269="" class="progress flex-grow-1" style="height: 4px;"><div _ngcontent-ng-c303433269="" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" class="progress-bar" style="width: 100%;"></div></div>
+              <div class="d-flex align-items-center">
+                <span
+                  class="d-flex align-items-center justify-content-center rounded-circle border border-secondary text-secondary"
+                  style="width: 24px; height: 24px; "
+                  >3</span
+                >
+                <span class="ms-2 text-secondary fw-medium">Preview</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card px-lg-5  px-sm-0 card--radius shadow border-0">
+          <section class="card-body p-3 p-md-5">
+        <section class="preview-content">
+          <div class="preview-wrapper">
+            <h3 class="district-heading">Applying for Khordha District</h3>
+
+            <div class="applicant-info">
+              <div class="personal-info">
+                <h4 class="applicant-name">{{latestrecord?.applicantName}}</h4>
+                <div class="phone-info">
+                  <i class="ti ti-phone" aria-hidden="true"></i>
+                  <span>{{latestrecord?.mobile}}</span>
+                </div>
+                <div class="father-info">
+                  <span class="info-label">Father's name:</span>
+                  <span class="info-value">{{latestrecord?.fatherName}}</span>
+                </div>
+                <div class="dob-info">
+                  <span class="info-label">Date of Birth:</span>
+                  <span class="info-value">{{latestrecord?.dob | date:'dd MMM, yyyy'}}</span>
+                  <span>(26 years 6months 20 days)</span>
+                </div>
+              </div>
+
+              <div class="photo-container">
+                <!-- <div innerHTML="<svg id='99:1016' layer-name='user' width='122' height='123' viewBox='0 0 122 123' fill='none' xmlns='http://www.w3.org/2000/svg' class='user-photo'>
+                  <path d='M61.0002 61.5C75.0374 61.5 86.4168 50.1206 86.4168 36.0834C86.4168 22.0461 75.0374 10.6667 61.0002 10.6667C46.9629 10.6667 35.5835 22.0461 35.5835 36.0834C35.5835 50.1206 46.9629 61.5 61.0002 61.5Z' fill='#2957A3' fill-opacity='0.2'></path>
+                  <path d='M61.001 74.2083C35.5335 74.2083 14.7935 91.2883 14.7935 112.333C14.7935 113.757 15.9118 114.875 17.3351 114.875H104.667C106.09 114.875 107.208 113.757 107.208 112.333C107.208 91.2883 86.4685 74.2083 61.001 74.2083Z' fill='#2957A3' fill-opacity='0.2'></path>
+                  </svg>" aria-label="Applicant's photo"></div>
+                <p class="photo-label">Passport Photo</p> -->
+                <img [src]="photo" alt="Applicant's photo" class="photo-container"  />
+              </div>
+            </div>
+          </div>
+
+          <section class="details-section">
+            <h3 class="section-title fw-bold mt-4">Personal Details</h3>
+            <div class="details-container">
+              <div class="details-row">
+                <div class="details-group">
+                  <div class="detail-item">
+                    <span class="detail-label">Gender:</span>
+                    <span class="detail-value">Male</span>
+                  </div>
+                  <div class="detail-item">
+                    <span class="detail-label">Caste:</span>
+                    <span class="detail-value">General</span>
+                  </div>
+                </div>
+                <div class="details-group">
+                  <div class="detail-item">
+                    <span class="detail-label">Email ID:</span>
+                    <span class="detail-value">{{latestrecord?.email}}</span>
+                  </div>
+                  <div class="detail-item">
+                    <span class="detail-label">Qualification:</span>
+                    <span class="detail-value">Intermediate</span>
+                  </div>
+                </div>
+                <div class="details-group">
+                  <div class="detail-item">
+                    <span class="detail-label">Mother's name:</span>
+                    <span class="detail-value">{{latestrecord?.motherName}}</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="details-row">
+                <div class="details-group">
+                  <div class="detail-item">
+                    <span class="detail-label">No of criminal case registered :</span>
+                    <span class="detail-value">{{latestrecord?.caseNumber}}</span>
+                  </div>
+                  <div class="detail-item">
+                    <span class="detail-label">Are you a Freedom Fighter? :</span>
+                    <span class="detail-value">No</span>
+                  </div>
+                </div>
+                <div class="details-group">
+                  <div class="detail-item">
+                    <span class="detail-label">Identification Mark 1:</span>
+                    <span class="detail-value">{{latestrecord?.idMark1}}</span>
+                  </div>
+                  <div class="detail-item">
+                    <span class="detail-label">Identification Mark 2:</span>
+                    <span class="detail-value">{{latestrecord?.idMark2}}</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section class="address-section">
+            <h3 class="section-title fw-bold">Permanent Address</h3>
+            <div class="address-container">
+              <div class="address-row">
+                <div class="address-group">
+                  <div class="address-item">
+                    <span class="address-label">District:</span>
+                    <span class="address-value">Khordha</span>
+                  </div>
+                  <div class="address-item">
+                    <span class="address-label">Block:</span>
+                    <span class="address-value">Balianta</span>
+                  </div>
+                </div>
+                <div class="address-group">
+                  <div class="address-item">
+                    <span class="address-label">Post Office:</span>
+                    <span class="address-value">{{latestrecord?.post}}</span>
+                  </div>
+                  <div class="address-item">
+                    <span class="address-label">Police Station:</span>
+                    <span class="address-value">{{latestrecord?.policeStation}}</span>
+                  </div>
+                </div>
+                <div class="address-group">
+                  <div class="address-item">
+                    <span class="address-label">Village:</span>
+                    <span class="address-value">{{latestrecord?.village}}</span>
+                  </div>
+                  <div class="address-item">
+                    <span class="address-label">Address:</span>
+                    <span class="address-value">{{latestrecord?.address}}</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- <section class="documents-section">
+            <h3 class="section-title fw-bold">Documents</h3>
+            <div class="table-responsive">
+              <table class="table ">
+                 <thead class="">
+                    <tr>
+                       <td width="6%">Sl No.</td>
+                       <td width="30%">Document Name</td>
+                       <td width="20%">Certificate</td>
+                       <td width="5%"></td>
+                    </tr>
+                 </thead>
+                 <tbody class="">
+                    <tr>
+                       <td>01</td>
+                       <td>निवास प्रमाण पत्र</td>
+                       <td>
+                          <span class="d-flex align-items-center gap-2 pdf-content"><span><img src="../../../assets/pdf.png" alt="pdf-icon"></span><span>Recidential.pdf <small class="d-block">16
+                                   MB</small> </span></span>
+                       </td>
+                       <td><i class="bi bi-download"></i></td>
+                    </tr>
+                    <tr>
+                       <td>02</td>
+                       <td>आरक्षण सम्बन्धी प्रमाण-पत्र</td>
+                       <td>
+                          <span class="d-flex align-items-center gap-2 pdf-content"><span><img src="../../../assets/pdf.png" alt="pdf-icon"></span><span>Recidential.pdf <small class="d-block">16
+                                   MB</small> </span></span>
+                       </td>
+                       <td><i class="bi bi-download"></i></td>
+                    </tr>
+                    <tr>
+                       <td>03</td>
+                       <td>मैट्रिक योग्यता प्रमाण पत्र</td>
+                       <td>
+                          <span class="d-flex align-items-center gap-2 pdf-content"><span><img src="../../../assets/pdf.png" alt="pdf-icon"></span><span>Matriculation.pdf <small class="d-block">16
+                                   MB</small> </span></span>
+                       </td>
+                       <td><i class="bi bi-download"></i></td>
+                    </tr>
+                    <tr>
+                       <td>04</td>
+                       <td>इंटरमीडिएट प्रमाण पत्र</td>
+                       <td>
+                          <span class="d-flex align-items-center gap-2 pdf-content"><span><img src="../../../assets/pdf.png" alt="pdf-icon"></span><span>Intermediate.pdf <small class="d-block">16
+                                   MB</small> </span></span>
+                       </td>
+                       <td><i class="bi bi-download"></i></td>
+                    </tr>
+                    <tr>
+                       <td>05</td>
+                       <td>इंटरमीडिएट अंक प्रमाण पत्र</td>
+                       <td>
+                          <span class="d-flex align-items-center gap-2 pdf-content"><span><img src="../../../assets/pdf.png" alt="pdf-icon"></span><span>Marksheet.pdf
+                                <small class="d-block">Download</small> </span></span>
+                       </td>
+                       <td><i class="bi bi-download"></i></td>
+                    </tr>
+                    <tr>
+                       <td>06</td>
+                       <td>हस्ताक्षर (अंग्रेजी में)</td>
+                       <td>
+                          <span class="signature-box">Rabinarayana Das</span>
+                       </td>
+                       <td><i class="bi bi-download"></i></td>
+                    </tr>
+                    <tr>
+                       <td>07</td>
+                       <td>हस्ताक्षर अपलोड करें (हिन्दी में)</td>
+                       <td>
+                          <span class="signature-box">रबीनारायण दास</span>
+                       </td>
+                       <td><i class="bi bi-download"></i></td>
+                    </tr>
+
+
+                 </tbody>
+              </table>
+           </div>
+          </section> -->
+          <section class="documents-section">
+            <h3 class="section-title">Documents</h3>
+            <div class="documents-container">
+              <table class="documents-table">
+                <caption class="sr-only">
+                  List of uploaded documents
+                </caption>
+                <thead>
+                  <tr>
+                    <th scope="col" class="doc-col-serial">Sl No.</th>
+                    <th scope="col" class="doc-col-name">Document Name</th>
+                    <th scope="col" class="doc-col-cert">Certificate</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="document-row">
+                    <td class="doc-serial">01</td>
+                    <td class="doc-name">निवास प्रमाण पत्र</td>
+                    <td class="doc-cert">
+                      <div class="doc-file">
+                        <img
+                          src="../../../assets/pdf.png"
+                          alt="PDF"
+                          class="pdf-icon"
+                        />
+                        <div class="doc-file-info" (click)="downloadFile(filedata?.resident)">
+                          <div class="doc-filename">{{filedata?.resident}}</div>
+                          <div class="doc-filesize">Download</div>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+
+                  <tr class="document-row">
+                    <td class="doc-serial">02</td>
+                    <td class="doc-name">आरक्षण सम्बन्धी प्रमाण-पत्र</td>
+                    <td class="doc-cert">
+                      <div class="doc-file">
+                        <img
+                          src="../../../assets/pdf.png"
+                          alt="PDF"
+                          class="pdf-icon"
+                        />
+                        <div class="doc-file-info" (click)="downloadFile(filedata?.physical)">
+                          <div class="doc-filename">{{filedata?.physical}}</div>
+                          <div class="doc-filesize">Download</div>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+
+                  <tr class="document-row">
+                    <td class="doc-serial">03</td>
+                    <td class="doc-name">मैट्रिक योग्यता प्रमाण पत्र</td>
+                    <td class="doc-cert">
+                      <div class="doc-file">
+                        <img
+                          src="../../../assets/pdf.png"
+                          alt="PDF"
+                          class="pdf-icon"
+                        />
+                        <div class="doc-file-info" (click)="downloadFile(filedata?.matric)">
+                          <div class="doc-filename">{{filedata?.matric}}</div>
+                          <div class="doc-filesize">Download</div>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+
+                  <tr class="document-row">
+                    <td class="doc-serial">04</td>
+                    <td class="doc-name">इंटरमीडिएट प्रमाण पत्र</td>
+                    <td class="doc-cert">
+                      <div class="doc-file">
+                        <img
+                          src="../../../assets/pdf.png"
+                          alt="PDF"
+                          class="pdf-icon"
+                        />
+                        <div class="doc-file-info" (click)="downloadFile(filedata?.graduation)">
+                          <div class="doc-filename" >{{filedata?.graduation}}</div>
+                          <div class="doc-filesize">Download</div>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+
+                  <tr class="document-row">
+                    <td class="doc-serial">05</td>
+                    <td class="doc-name">इंटरमीडिएट अंक प्रमाण पत्र</td>
+                    <td class="doc-cert">
+                      <div class="doc-file">
+                        <img
+                          src="../../../assets/pdf.png"
+                          alt="PDF"
+                          class="pdf-icon"
+                        />
+                        <div class="doc-file-info" (click)="downloadFile(filedata?.graduationMark)">
+                          <div class="doc-filename">{{filedata?.graduationMark}}</div>
+                          <div class="doc-filesize">Download</div>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+
+                  <tr class="document-row">
+                    <td class="doc-serial">06</td>
+                    <td class="doc-name">हस्ताक्षर (अंग्रेजी में)</td>
+                    <!-- <td class="doc-cert">
+                      <div class="doc-file">
+                        <img
+                          src="../../../assets/pdf.png"
+                          alt="PDF"
+                          class="pdf-icon"
+                        />
+                        <div class="doc-file-info" (click)="downloadFile(filedata?.signatureEng)">
+                          <div class="doc-filename">{{filedata?.signatureEng}}</div>
+                          <div class="doc-filesize">Download</div>
+                        </div>
+                      </div>
+                    </td> -->
+                    <td>
+                      <img [src]="signatureEng" class="photo-container1"  />
+                    </td>
+                  </tr>
+
+
+                  <tr class="document-row">
+                    <td class="doc-serial">07</td>
+                    <td class="doc-name">हस्ताक्षर अपलोड करें (हिन्दी में)</td>
+                    <!-- <td class="doc-cert">
+                      <div class="doc-file">
+                        <img
+                          src="../../../assets/pdf.png"
+                          alt="PDF"
+                          class="pdf-icon"
+                        />
+                        <div class="doc-file-info" (click)="downloadFile(filedata?.signatureHindi)">
+                          <div class="doc-filename">{{filedata?.signatureHindi}}</div>
+                          <div class="doc-filesize">Download</div>
+                        </div>
+                      </div>
+                    </td> -->
+                    <td>
+                      <img [src]="signatureHindi" class="photo-container1" />
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </section>
+          <section class="declaration-section" *ngIf="status == 1">
+            <h3 class="declaration-title fw-bold">स्व घोषणा<span class="required-mark">*</span></h3>
+            <div class="declaration-content">
+              <div>
+                <input type="checkbox" id="declaration-checkbox" class="declaration-checkbox" aria-required="true" />
+              </div>
+              <label for="declaration-checkbox" class="declaration-text">
+                मैं प्रमाणित करता / करती हूँ की ऊपर दी गयी सूचनायें तथा संलग्न प्रमाण - पत्र सही है | मिथ्या पाए जाने पर मेरी उम्मीदवारी एवं नामांकन कभी भी बिना सूचना के रद्द किया जा सकता है |
+              </label>
+            </div>
+          </section>
+
+          <section class="action-section" *ngIf="status == 1">
+            <div class="payment-note">
+              <span>Once preview the details Click on 'Pay 200' to proceed for</span>
+              <span class="payment-highlight">Payment</span>
+            </div>
+
+            <div class="action-buttons">
+              <button class="btn-back" aria-label="Go back to previous step">
+                <i class="ti ti-arrow-left" aria-hidden="true"></i>
+                <span>Back</span>
+              </button>
+              <button class="btn-reset" aria-label="Reset form">Reset</button>
+              <button class="btn-proceed" aria-label="Proceed to payment" (click)="routeing()" data-bs-toggle="modal" data-bs-target="#taggedcdmo1">Proceed to Pay</button>
+            </div>
+          </section>
+
+
+        </section>
+        </section></div>
+      </div>
+    </main>
+  </div>
+
+  <!-- Modal Attendance Details-->
+  <div class="modal fade" id="taggedcdmo1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" style="max-width: 20%;">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">
+            Enter OTP :-
+          </h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <div class="iconinput">
+                <input type="text" class="form-control usertext userinput" id="otpId" name="otpId" maxlength="6" placeholder="Enter OTP" autocomplete="off" onkeyup="this.value=this.value.replace(/[^0-9]/g,'');">
+            </div>
+            <label class="mb-2 mt-2 text-left">OTP Sent to Hospital Mobile Number : <span id="operatorOTPTimer"
+              style="color: #d50505">{{ latestrecord?.mobile }}</span></label>
+        </div>
+        </div>
+        <div class="modal-footer d-flex justify-content-center align-items-center">
+          <button type="button" id="sendId" class="btn btn-success" (click)="verifyOtp()" data-bs-dismiss="modal" aria-label="Close">verify</button>
+          <button type="button" data-bs-dismiss="modal" aria-label="Close" class="btn btn-primary">Close</button>
+      </div>
+      </div>
+    </div>
+  </div>

@@ -1,0 +1,235 @@
+<div class="candidate">
+    <header class="navigation">
+      <div class="logo-container">
+        <img
+          src="https://cdn.builder.io/api/v1/image/assets/fbba871a959f45d7a139079b9438969f/ccfae40173152eef1ded863711b2f71cd6d25c34?placeholderIfAbsent=true"
+          alt="Bihar Homeguard Logo"
+          class="logo-image"
+        />
+        <div class="logo-text">
+          <h1 class="organization-name-en">BIHAR HOMEGUARD</h1>
+          <h2 class="organization-name-hi">बिहार गृहरक्षक</h2>
+        </div>
+      </div>
+      <nav class="nav-links">
+        <a href="#" class="nav-link active" aria-current="page"
+          >My Application</a
+        >
+        <button class="nav-link logout-link" aria-label="Logout from account">
+          Logout
+        </button>
+      </nav>
+    </header>
+    <div class="content-wrapper">
+      <aside class="user-sidebar">
+        <div class="user-profile">
+          <img
+            src="https://cdn.builder.io/api/v1/image/assets/fbba871a959f45d7a139079b9438969f/3eb43a64c45f03e7a68ecc2d2ddef10c09ae57f9?placeholderIfAbsent=true"
+            alt="User profile photo"
+            class="profile-image"
+          />
+          <div class="user-info">
+            <h3 class="user-name">{{latestRecord?.applicantName}}</h3>
+            <div class="user-contact">
+              <img
+                src="https://cdn.builder.io/api/v1/image/assets/fbba871a959f45d7a139079b9438969f/f3a8b7b87bc7223e71ec32be81b440bada1307bb?placeholderIfAbsent=true"
+                alt="Phone"
+                class="phone-icon"
+              />
+              <span class="phone-number">{{latestRecord?.mobile}}</span>
+            </div>
+          </div>
+        </div>
+        <div class="sidebar-actions">
+          <button class="logout-button" aria-label="Logout">
+           <i class="bi bi-box-arrow-left"></i>
+            <span>Logout</span>
+          </button>
+        </div>
+      </aside>
+      <div class="main-content">
+        <h2 class="page-title">My Application</h2>
+        <article class="application-card">
+          <div class="application-details">
+            <div class="application-header">
+              <h3 class="application-title">Home Guard Application 2025</h3>
+              <div class="application-meta">
+                <span class="application-id">{{latestRecord?.applicationNo}}</span>
+                <span class="status-badge applied">Applied</span>
+              </div>
+              <p class="application-date">
+                <span class="date-label">Applied on:</span>
+                <span class="date-value">{{latestRecord?.createdOn | date:'dd MMM, yyyy'}}</span>
+              </p>
+            </div>
+            <div class="payment-div">
+              <div class="payment-header">
+                <h4 class="payment-title">Payment Details</h4>
+                <span class="status-badge successful">Successful</span>
+              </div>
+              <div class="payment-details">
+                <div class="payment-item">
+                  <span class="payment-label">Amount</span>
+                  <span class="payment-value">₹1,000.00</span>
+                </div>
+                <div class="payment-item">
+                  <span class="payment-label">Transaction ID</span>
+                  <span class="payment-value">#23455666222</span>
+                </div>
+                <div class="payment-item">
+                  <span class="payment-label">Payment Date</span>
+                  <span class="payment-value">22 Feb, 2025</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="action-buttons">
+            <button
+              class="action-button edit-button"
+              aria-label="Edit application"
+            >
+            <i class="bi bi-pencil-square"></i>
+              <span>Edit</span>
+            </button>
+            <button
+              class="action-button preview-button"
+              aria-label="Preview application" (click)="priview()">
+              <i class="bi bi-eye"></i>
+              <span>  Preview</span>
+            </button>
+            <button
+              class="action-button edit-button1"
+              aria-label="Preview application" (click)="admitcard()">
+              <i class="bi bi-person-vcard-fill"></i>
+              <span>  Admit Card</span>
+            </button>
+          </div>
+        </article>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- <main class="dashboard-container">
+    <aside class="sidebar">
+      <div class="user-profile">
+        <img
+          src="https://cdn.builder.io/api/v1/image/assets/fbba871a959f45d7a139079b9438969f/3eb43a64c45f03e7a68ecc2d2ddef10c09ae57f9?placeholderIfAbsent=true"
+          class="profile-image"
+          alt="User profile picture"
+        />
+        <div class="user-info">
+          <h2 class="user-name">Rabinarayana Das</h2>
+          <div class="user-contact">
+            <img
+              src="https://cdn.builder.io/api/v1/image/assets/fbba871a959f45d7a139079b9438969f/eb5c16ada4a0cfa12feb76ebb967d68d9eca005f?placeholderIfAbsent=true"
+              class="phone-icon"
+              alt="Phone icon"
+            />
+            <span class="phone-number">+91 9078234765</span>
+          </div>
+        </div>
+      </div>
+      <div class="logout-div">
+        <button
+          class="logout-button"
+          aria-label="Logout from the application"
+        >
+          <span class="logout-icon" aria-hidden="true"></span>
+          <span>Logout</span>
+        </button>
+      </div>
+    </aside>
+    <div class="main-content">
+      <h1 class="page-title">My Application</h1>
+      <article class="application-card">
+        <div class="application-details">
+          <div class="application-header">
+            <h2 class="application-title">Home Guard Application 2025</h2>
+            <div class="application-meta">
+              <span class="application-id">RTY002021233</span>
+              <span class="status-badge application-status">Applied</span>
+            </div>
+            <p class="application-date">
+              <span class="date-label">Applied on:</span>
+              <span class="date-value">22 Feb, 2025</span>
+            </p>
+          </div>
+          <div class="payment-div">
+            <div class="payment-header">
+              <div class="payment-title-container">
+                <h3 class="payment-title">Payment Details</h3>
+                <span class="status-badge payment-status">Successful</span>
+              </div>
+            </div>
+            <div class="payment-details">
+              <div class="payment-item">
+                <span class="payment-label">Amount</span>
+                <span class="payment-value">₹1,000.00</span>
+              </div>
+              <div class="payment-item">
+                <span class="payment-label">Transaction ID</span>
+                <span class="payment-value">#23455666222</span>
+              </div>
+              <div class="payment-item">
+                <span class="payment-label">Payment Date</span>
+                <span class="payment-value">22 Feb, 2025</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="action-buttons">
+          <button class="btn btn-outline" aria-label="Edit application">
+            <span class="edit-icon" aria-hidden="true"></span>
+            <span>Edit</span>
+          </button>
+          <button class="btn btn-primary" aria-label="Preview application">
+            <img
+              src="https://cdn.builder.io/api/v1/image/assets/fbba871a959f45d7a139079b9438969f/09da85bb57a988974f36cb9e297aabdd2c7742d1?placeholderIfAbsent=true"
+              class="preview-icon"
+              alt="Preview icon"
+              aria-hidden="true"
+            />
+            <span>Preview</span>
+          </button>
+        </div>
+      </article>
+    </div>
+  </main> -->
+
+
+
+
+  <!-- <div class="container mt-5">
+    <div class="row">
+        <div class="col-md-3 text-center bg-dark text-white p-4 rounded">
+            <img src="profile.jpg" class="rounded-circle mb-3" width="80" height="80" alt="Profile Picture">
+            <h5>Rabinarayana Das</h5>
+            <p class="mb-1">📞 +91 9078234765</p>
+            <button class="btn btn-outline-light mt-3">Logout</button>
+        </div>
+        <div class="col-md-9">
+            <div class="card p-4">
+                <h4>My Application</h4>
+                <div class="card mt-3">
+                    <div class="card-body">
+                        <h5>Home Guard Application 2025</h5>
+                        <p class="mb-1">RTY002021233 <span class="badge bg-primary">Applied</span></p>
+                        <p class="text-muted">Applied on: 22 Feb, 2025</p>
+                        <div class="border p-3 rounded bg-light">
+                            <h6>Payment Details <span class="badge bg-success">Successful</span></h6>
+                            <p>Amount: ₹1,000.00</p>
+                            <p>Transaction ID: #23455666222</p>
+                            <p>Payment Date: 22 Feb, 2025</p>
+                        </div>
+                        <div class="mt-3">
+                            <button class="btn btn-outline-primary">Edit</button>
+                            <button class="btn btn-primary">Preview</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> -->
+
